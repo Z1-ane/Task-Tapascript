@@ -1,0 +1,38 @@
+//T001:
+let name = new Array(5);
+//T002:
+
+let empty = new Array(3);
+let empty1 = [, ,];
+//T003:
+
+let fruits = ["Mango", "Apple", "Pineap", "Grapse", "Pear", "Orange"];
+console.log(fruits[fruits.length - 2]);
+
+//T004:
+for (i = 1; i < fruits.length; i += 2) {
+  console.log(fruits[i]);
+}
+
+//T005:
+fruits.unshift("papaya");
+fruits.push("banana");
+console.log(fruits);
+//T006:
+
+fruits.shift();
+fruits.pop();
+console.log(fruits);
+//T007:
+
+const foods = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+let [, , , , , , sixth] = foods;
+console.log(sixth);
+
+//T008:
+let [, , ...eigth] = foods;
+console.log(eigth);
+
+//T009
+
+
