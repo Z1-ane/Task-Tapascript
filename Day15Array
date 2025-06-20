@@ -34,5 +34,46 @@ let [, , ...eigth] = foods;
 console.log(eigth);
 
 //T009
+//T009
+let original = [
+  { name: "apple", color: "red" },
+  { name: "banana", color: "yellow" },
+];
+
+let copy = [...original];
+console.log(copy);
+copy[0].name = "papaya";
+console.log(copy[0]);
+console.log(original[0]);
+
+//T10
+original.length = 0;
+console.log(original);
+
+//T11:
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < num.length; i++) {
+  if (num[i] == 5) {
+    num.length = 6;
+  }
+}
+console.log(num);
+
+//T12:
+num.splice(0, num.length);
+console.log(num);
+
+//t13:
+let numbers = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+numbers = [];
+console.log(numbers);
+//splice method might be best as it preserves the array:
+
+//t14:
+let arr1 = [];
+let arr2 = [];
+let arr3 = arr1.concat(arr2);
+console.log(arr3);
+//creates an empty array
 
 
