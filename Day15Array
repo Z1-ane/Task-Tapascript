@@ -76,4 +76,48 @@ let arr3 = arr1.concat(arr2);
 console.log(arr3);
 //creates an empty array
 
+//t15:
+let cars = ["Mercedes", "Skoda", "Tata", "Creta", "Lamborghini", "Tercedes"];
+let search = "edes";
+console.log(cars.some((car) => car.includes(search)));
+//t16:
+//slice = returns the shallow copy of an array and doesn't change the original array
+//splice = changes the original array by removing adding elements
+let arr = [1, 2, 3, 4, 5];
+let sliced = arr.slice(1, 4);
+
+console.log(sliced);
+console.log(arr);
+
+//t17:
+let alphanumericArray = [
+  "a1",
+  "b12",
+  "z9",
+  "apple123",
+  "99balloons",
+  "hello42",
+  "abc123",
+  "x7y8",
+  "1stPlace",
+  "code007",
+];
+let sorted = [...alphanumericArray].sort((a, b) => a.localeCompare(b));
+console.log(sorted);
+console.log(alphanumericArray);
+
+//t18:
+//dense array  = array with elements whose every index is filled
+// sparse = array having empty indexes
+let dense = [10, 20, 30, 40];
+let sparse = [1, , 3];
+
+//t19:
+let defaultA = new Array(4).fill("0");
+console.log(defaultA);
+
+//t20:
+//toString
+let str = dense.toString();
+console.log(str);
 
